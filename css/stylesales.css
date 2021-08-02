@@ -1,0 +1,24 @@
+table {
+    width: 100%;
+border: 5px solid rgb(86, 90, 97);
+font-size: 30px;
+margin: 20px;
+padding:20px;
+line-height: 60px;
+border-spacing: 6px;
+}
+td {
+    background-color: rgb(199, 176, 193);
+    padding: 10px;
+    margin: 10px;
+}
+th {
+    background-color: rgb(236, 229, 240);
+}
+tfoot{
+    background-color: rgb(235, 228, 193);
+    padding: 10px;
+    margin: 10px;
+    font-size: 40px;
+
+}
