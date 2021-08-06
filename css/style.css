@@ -1,12 +1,13 @@
-body{
-background-color: #548CA8;
+body 
+{
+background-color: #986D8E;
 margin: auto;
 }
 
 h1{
-color: #c9d5e7;
+color: #c0cccb;
 text-align: center;
-font-family: sans-serif ;
+ font-family: 'Yanone Kaffeesatz', sans-serif;
 font-size: 70px;
 
 }
@@ -15,6 +16,7 @@ header nav{
     text-align:right;
    font-size: 30px;
     margin-right: 30px;
+    background-color: #716F81;
    
 
 }
@@ -31,7 +33,7 @@ header nav{
 header nav a {
     width: 100%;
     padding: 10px 30px;
-    color: #bdcbe7;
+    color: #D9CAB3;
     font-weight : bold;
     font-size: 30px;
     cursor: pointer;
@@ -41,10 +43,10 @@ header nav a {
   } 
   main{
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 50% 50%;
   }
   main p{
-      width: 50%;
+      width: 70%;
       height:inherit;
       font-family: 'Courier New', Courier, monospace;
       font-size: 30px;
@@ -79,8 +81,8 @@ ul li{
 footer{
     text-align: left;
     color: #e8ebf1;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 50px;
+    font-family: 'Palette Mosaic', cursive;
+        font-size: 50px;
 }
 /* h2 {
     color: #cfd3da;
