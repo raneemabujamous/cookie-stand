@@ -168,6 +168,7 @@ footer();
 
 
 let getInfo = document.getElementById('infolocation');
+
 getInfo.addEventListener('submit' , infoOfCity);
 function infoOfCity(event){
     event.preventDefault();
@@ -177,13 +178,21 @@ let minSales = parseInt(event.target.min.value);
 let maxSles = parseInt(event.target.max.value);
 let avarege = parseInt( event.target.avarge.value);
 let newCityCLculation = new country(nameNew , maxSles,minSales,avarege);
-console.log(newCityCLculation)
 
-newCityCLculation.coutmor();
-newCityCLculation.avgrandom();
-newCityCLculation.finalresult();
-newCityCLculation.rander();
-cerateTable.deleteTFoot(); 
-footer();
+// var letters = /^[A-Za-z]+$/;
+// if(!nameNew.match(letters)){
+// let note = document.getElementById('note')
+// note.textContent="write correct name "
+
+//   } else{
+      
+    newCityCLculation.coutmor();
+    newCityCLculation.avgrandom();
+    newCityCLculation.finalresult();
+    newCityCLculation.rander();
+    cerateTable.deleteTFoot(); 
+    footer();
+//   }
+
 }
 
