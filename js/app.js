@@ -4,7 +4,7 @@
 
        let totalFinalC = 0;
        let arrayOfobject =[];
-      function country (name,max,min,avarege) {
+      function Country (name,max,min,avarege) {
 
 
     this.name = name;
@@ -20,7 +20,7 @@
 };
 
  
-country.prototype.coutmor = function() { 
+Country.prototype.coutmor = function() { 
     for (let i=0 ; i<=hours.length ; i++){
     this.numberCookies[i] = Math.floor(Math.random() * (this.max - this.min + 1) + this.min) ; 
    }
@@ -28,7 +28,7 @@ country.prototype.coutmor = function() {
     
   }
 
-  country.prototype.avgrandom = function(){
+  Country.prototype.avgrandom = function(){
     for (let i=0 ; i<hours.length ; i++){
 
         this.cookiesBerHours[i]= Math.floor(this.numberCookies[i] * this.avarege) ;
@@ -40,7 +40,7 @@ country.prototype.coutmor = function() {
 
 }
 
-country.prototype.finalresult = function(){
+Country.prototype.finalresult = function(){
     for (let i=0 ; i<hours.length ; i++){
     this.result[i]=   this.cookiesBerHours[i] ;
 }
@@ -48,7 +48,7 @@ console.log(this.result)
 return this.result;
 }
 
-country.prototype.rander = function(){
+Country.prototype.rander = function(){
     let totalRows = 0 ;
     let createTr = document.createElement('tr');
     cerateTable.appendChild(createTr);
@@ -128,11 +128,11 @@ totles.appendChild(createTddd);
 
 
 
-let Seattle = new country('Seattle',65,23,6.3);
-let Tokyo = new country('Tokyo',24,3,1.2);
-let Dubai = new country('Dubai',38,11,1.7);
-let Paris = new country('Paris',38,20,2.3);
-let Lima = new country('Lima',16,2,4.6);
+let Seattle = new Country('Seattle',65,23,6.3);
+let Tokyo = new Country('Tokyo',24,3,1.2);
+let Dubai = new Country('Dubai',38,11,1.7);
+let Paris = new Country('Paris',38,20,2.3);
+let Lima = new Country('Lima',16,2,4.6);
 
 
 
@@ -177,7 +177,7 @@ let nameNew = event.target.nameCoutry.value;
 let minSales = parseInt(event.target.min.value);
 let maxSles = parseInt(event.target.max.value);
 let avarege = parseInt( event.target.avarge.value);
-let newCityCLculation = new country(nameNew , maxSles,minSales,avarege);
+let newCityCLculation = new Country(nameNew , maxSles,minSales,avarege);
 
 // var letters = /^[A-Za-z]+$/;
 // if(!nameNew.match(letters)){
