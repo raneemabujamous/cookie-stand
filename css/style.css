@@ -84,36 +84,33 @@ footer{
     font-family: 'Palette Mosaic', cursive;
         font-size: 50px;
 }
-/* h2 {
-    color: #cfd3da;
-    font-family: sans-serif ;
-    margin: 20px;
-padding: 20px;
-    font-size: 50px;
-}
-p{
-   color: #e4d3e1;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    padding: 20px;
-    margin: 20px;
-    font-size: 30px;
+.container{
+    position: relative;
+    width: 50%;
   
 }
-ul {
-    color: rgb(71, 71, 77);
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-   width: 200px;
-   height: 100px;
-position: sticky;
+.text{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
 }
-
-label {
-    color: #cfd3da;
-    font-family: sans-serif ;
-    margin: 20px;
-padding: 20px;
-font-size: 50px;
- position: sticky;
-
+.container:hover .text {
+    opacity: 1;
+  }
+  
+.ptag{
+    color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
 }
-    */
